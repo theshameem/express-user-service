@@ -1,32 +1,18 @@
-import express, { type Application, type Request, type Response } from "express";
+import express, {
+  type Application,
+  type Request,
+  type Response,
+} from "express";
 import { pool } from "./db";
+import { userRouter } from "./modules/user/user.route";
 
 export const app: Application = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
-app.post("/api/users", async (req: Request, res: Response) => {
-  try {
-    const { name, age, email, password } = req.body;
-
-    await pool.query(
-      `
-    INSERT INTO users(name, age, email, password)
-    VALUES($1, $2, $3, $4)
-    RETURNING *
-    `,
-      [name, age, email, password],
-    );
-    res.status(201).json({
-      message: "User created successfully",
-    });
-  } catch (error: any) {
-    res.status(500).json({
-      message: error.message,
-      data: error,
-    });
-  }
-});
+app.use("/api/users", userRouter);
 
 app.get("/api/users", async (req: Request, res: Response) => {
   try {
