@@ -1,8 +1,11 @@
-import type { IUser } from "./user.interface";
+import bcrypt from "bcryptjs";
 import { pool } from "../../db";
+import type { IUser } from "./user.interface";
 
 const createUser = async (payload: IUser) => {
   const { name, age, email, password } = payload;
+
+  const hashedPassword = await bcrypt.hash(password, 13); // Implement password hashing here
 
   const result = await pool.query(
     `
@@ -10,8 +13,10 @@ const createUser = async (payload: IUser) => {
     VALUES($1, $2, $3, $4)
     RETURNING *
     `,
-    [name, age, email, password],
+    [name, age, email, hashedPassword],
   );
+
+  delete result.rows[0].password;
 
   return result;
 };
@@ -32,6 +37,7 @@ const getUserById = async (id: string) => {
       `,
     [id],
   );
+  delete result?.rows[0].password;
   return result;
 };
 
@@ -51,6 +57,8 @@ const updateUserById = async (id: string, payload: IUser) => {
     [name, age, email, password, id],
   );
 
+  delete result.rows[0].password;
+
   return result;
 };
 
@@ -60,6 +68,8 @@ const deleteUserById = async (id: string) => {
       WHERE id=$1`,
     [id],
   );
+
+  delete result.rows[0].password;
 
   return result;
 };
