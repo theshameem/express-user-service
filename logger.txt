@@ -1,0 +1,28 @@
+
+Metod -> GET - Time: 1779113131401 URL -> /api/users
+
+Metod -> GET - Time: 1779113188028 URL -> /api/users/123
+
+Metod -> GET - Time: 1779113473394 URL -> /api/users/123
+
+Metod -> GET - Time: 1779113511278 URL -> /api/users/123
+
+Metod -> GET - Time: 1779113517288 URL -> /api/users/123
+
+Metod -> GET - Time: 1779113616496 URL -> /api/users
+
+Metod -> GET - Time: 1779113862589 URL -> /api/users
+
+Metod -> POST - Time: 1779114353724 URL -> /api/auth/login
+
+Metod -> GET - Time: 1779114387811 URL -> /api/users
+
+Metod -> GET - Time: 1779114403054 URL -> /api/users
+
+Metod -> GET - Time: 1779114578535 URL -> /api/users
+
+Metod -> GET - Time: 1779114582299 URL -> /api/users
+
+Metod -> GET - Time: 1779114931391 URL -> /api/users
+
+Metod -> GET - Time: 1779115501755 URL -> /api/users
