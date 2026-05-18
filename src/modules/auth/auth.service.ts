@@ -30,6 +30,7 @@ const loginUser = async (payload: { email: string; password: string }) => {
     id: userInfo.id,
     is_active: userInfo.is_active,
     name: userInfo.name,
+    role: userInfo.role,
   };
 
   var accessToken = jwt.sign(jwtpayload, config.jwt_secret as string, {
