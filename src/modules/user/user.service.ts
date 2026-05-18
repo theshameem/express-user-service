@@ -3,17 +3,17 @@ import { pool } from "../../db";
 import type { IUser } from "./user.interface";
 
 const createUser = async (payload: IUser) => {
-  const { name, age, email, password } = payload;
+  const { name, age, email, password, role } = payload;
 
   const hashedPassword = await bcrypt.hash(password, 13); // Implement password hashing here
 
   const result = await pool.query(
     `
-    INSERT INTO users(name, age, email, password)
-    VALUES($1, $2, $3, $4)
+    INSERT INTO users(name, age, email, password, role)
+    VALUES($1, $2, $3, $4, COALESCE($5, 'user'))
     RETURNING *
     `,
-    [name, age, email, hashedPassword],
+    [name, age, email, hashedPassword, role],
   );
 
   delete result.rows[0].password;
@@ -42,7 +42,7 @@ const getUserById = async (id: string) => {
 };
 
 const updateUserById = async (id: string, payload: IUser) => {
-  const { name, age, email, password } = payload;
+  const { name, age, email, password, role } = payload;
   const result = await pool.query(
     `
       UPDATE users
@@ -50,11 +50,12 @@ const updateUserById = async (id: string, payload: IUser) => {
       age=COALESCE($2, age), 
       email=COALESCE($3, email), 
       password=COALESCE($4, password), 
+      role=COALESCE($5, role)
       updated_at=NOW()
       WHERE id=$5
       RETURNING *
       `,
-    [name, age, email, password, id],
+    [name, age, email, password, id, role],
   );
 
   delete result.rows[0].password;

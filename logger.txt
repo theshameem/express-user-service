@@ -26,3 +26,7 @@ Metod -> GET - Time: 1779114582299 URL -> /api/users
 Metod -> GET - Time: 1779114931391 URL -> /api/users
 
 Metod -> GET - Time: 1779115501755 URL -> /api/users
+
+Metod -> POST - Time: 1779118494513 URL -> /api/users
+
+Metod -> POST - Time: 1779118711544 URL -> /api/users
