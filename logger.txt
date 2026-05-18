@@ -40,3 +40,21 @@ Metod -> GET - Time: 1779120144974 URL -> /api/users
 Metod -> POST - Time: 1779120192163 URL -> /api/auth/login
 
 Metod -> GET - Time: 1779120204788 URL -> /api/users
+
+Metod -> POST - Time: 1779121957364 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779122001991 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779122143183 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779122160122 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779122436575 URL -> /api/auth/refresh-token
+
+Metod -> POST - Time: 1779122484801 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779122494099 URL -> /api/auth/refresh-token
+
+Metod -> POST - Time: 1779122718367 URL -> /api/auth/refresh-token
+
+Metod -> POST - Time: 1779123581207 URL -> /api/auth/refresh-token
