@@ -110,3 +110,7 @@ Metod -> GET - Time: 1779164557248 URL -> /api/users/1
 Metod -> GET - Time: 1779164560036 URL -> /.well-known/appspecific/com.chrome.devtools.json
 
 Metod -> GET - Time: 1779164856926 URL -> /api/users
+
+Metod -> GET - Time: 1779165538720 URL -> /api/users
+
+Metod -> GET - Time: 1779165549500 URL -> /api/users
