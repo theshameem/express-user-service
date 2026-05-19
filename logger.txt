@@ -58,3 +58,55 @@ Metod -> POST - Time: 1779122494099 URL -> /api/auth/refresh-token
 Metod -> POST - Time: 1779122718367 URL -> /api/auth/refresh-token
 
 Metod -> POST - Time: 1779123581207 URL -> /api/auth/refresh-token
+
+Metod -> GET - Time: 1779164189720 URL -> /api/users
+
+Metod -> GET - Time: 1779164189893 URL -> /favicon.ico
+
+Metod -> GET - Time: 1779164199060 URL -> /api/user/12
+
+Metod -> GET - Time: 1779164213233 URL -> /api/profile
+
+Metod -> GET - Time: 1779164215186 URL -> /api/profile
+
+Metod -> GET - Time: 1779164222336 URL -> /api/profile
+
+Metod -> POST - Time: 1779164256148 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779164271348 URL -> /api/auth/login
+
+Metod -> POST - Time: 1779164293232 URL -> /api/auth/login
+
+Metod -> GET - Time: 1779164377786 URL -> /api/users
+
+Metod -> GET - Time: 1779164404555 URL -> /api/users
+
+Metod -> POST - Time: 1779164472307 URL -> /api/auth/login
+
+Metod -> GET - Time: 1779164488064 URL -> /api/users
+
+Metod -> GET - Time: 1779164523358 URL -> /api/users
+
+Metod -> GET - Time: 1779164523519 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164532016 URL -> /api/users
+
+Metod -> GET - Time: 1779164532116 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164532915 URL -> /api/users
+
+Metod -> GET - Time: 1779164532994 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164538200 URL -> /api/users/2
+
+Metod -> GET - Time: 1779164541061 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164541607 URL -> /api/users/1
+
+Metod -> GET - Time: 1779164541967 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164557248 URL -> /api/users/1
+
+Metod -> GET - Time: 1779164560036 URL -> /.well-known/appspecific/com.chrome.devtools.json
+
+Metod -> GET - Time: 1779164856926 URL -> /api/users
